@@ -56,7 +56,7 @@ FE·BE 인증 구조와 Docker·Nginx 배포
    - 변경 컴포넌트만 검증하도록 바꿔 CI 설정만 고친 MR 12분 → 35초
 2. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
    - React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결
-   - Production에서만 생긴 AI NPC 중복을 배포 산출물의 가드 누락으로 확정, rollback 후 재승격
+   - Production 전용 AI NPC 중복을 배포 산출물의 가드 누락으로 확정, 재승격
 3. **측정 기반 판단** · [PinLog](projects/pinlog.md#4-engineering-decisions)
    - 임베딩·프롬프트·다수결 변경을 측정해 근거 없는 변경 기각
    - 짧은 질의 검색 실패를 문자열 병합 신호로 해결
