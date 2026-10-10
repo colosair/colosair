@@ -13,12 +13,14 @@ Web Platforms · AI Applications · Developer Tools
 <tr>
 <td width="50%" valign="top">
 <a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="100%" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a><br>
-<b><a href="projects/ssafesta.md">SSAFESTA</a></b> · <sub>Frontend Main · 6인</sub><br>
+<b><a href="projects/ssafesta.md">SSAFESTA</a></b><br>
+<sub>Frontend Main · 6인</sub><br>
 React·Unity 통합, AWS EC2 Jenkins CI/CD 재설계
 </td>
 <td width="50%" valign="top">
 <a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="100%" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
-<b><a href="projects/pinlog.md">PinLog</a></b> · <sub>AI 파트 · 6인</sub><br>
+<b><a href="projects/pinlog.md">PinLog</a></b><br>
+<sub>팀장 · AI 파트 · 6인</sub><br>
 FastAPI AI 파이프라인과 자연어 검색 품질 개선
 </td>
 </tr>
@@ -28,12 +30,14 @@ FastAPI AI 파이프라인과 자연어 검색 품질 개선
 <tr>
 <td width="50%" valign="top">
 <a href="projects/nohome.md"><img src="assets/featured/nohome-tile.webp" width="100%" alt="NoHome 실거래가 검색과 AI 도우미 화면 — 개인 기여 기록으로 이동"></a><br>
-<b><a href="projects/nohome.md">NoHome</a></b> · <sub>팀장 · 3인 · 최우수상(팀)</sub><br>
+<b><a href="projects/nohome.md">NoHome</a></b><br>
+<sub>팀장 · 3인 · 최우수상(팀)</sub><br>
 Tool Calling 기반 AI 어시스턴트와 개인 배포
 </td>
 <td width="50%" valign="top">
 <a href="projects/linkle.md"><img src="assets/featured/linkle-tile.webp" width="100%" alt="LINKLE 지도와 장소 정보 화면 — 개인 기여 기록으로 이동"></a><br>
-<b><a href="projects/linkle.md">LINKLE</a></b> · <sub>팀장 · 5인</sub><br>
+<b><a href="projects/linkle.md">LINKLE</a></b><br>
+<sub>팀장 · 5인</sub><br>
 FE·BE 인증 구조와 Docker·Nginx 배포
 </td>
 </tr>
