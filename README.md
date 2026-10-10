@@ -107,4 +107,4 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 **Certifications & Algorithm**
 
 - 정보처리기사 · SQLD · ADsP
-- 백준 플래티넘 V — solved.ac [jhpaul](https://solved.ac/profile/jhpaul)
+- 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="top"></a>
