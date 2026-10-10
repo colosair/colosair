@@ -57,7 +57,7 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 
 1. **Production 승격 경로 신설** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)<br>
    장애 뒤 Demo 검증 산출물을 재빌드 없이 승격하는 경로 구성, main 승격 11건
-2. **BE·AI 계약 불일치** · [SSAFESTA](projects/ssafesta.md)<br>
+2. **BE·AI 계약 불일치** · [SSAFESTA](https://github.com/mingleland/ssafesta/pull/1293)<br>
    문서 처리 전면 실패를 재현으로 규명, BE·AI 양쪽 수정
 3. **React·Unity 입력 소유권** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)<br>
    ESC 이중 입력을 Unity 상태 snapshot과 명시 명령 채널로 해결
