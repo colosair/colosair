@@ -14,8 +14,8 @@ Web Platforms · AI Applications · Developer Tools
 <td width="50%" valign="top">
 <a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="100%" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a><br>
 <b><a href="projects/ssafesta.md">SSAFESTA</a></b><br>
-<sub>Frontend Main · 6인</sub><br>
-UI/UX 설계, React·Unity 통합, AWS EC2 Jenkins CI/CD 재설계
+<sub>Frontend Main · UI/UX · 6인</sub><br>
+React·Unity 통합, AWS EC2 Jenkins CI/CD 재설계
 </td>
 <td width="50%" valign="top">
 <a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="100%" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
