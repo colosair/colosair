@@ -10,9 +10,7 @@ Web Platforms · AI Applications · Developer Tools
 
 <p align="center">
 <a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-login.webp" width="350" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a>&nbsp;
-<a href="projects/pinlog.md"><img src="assets/featured/pinlog.webp" width="350" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a>
-</p>
-<p align="center">
+<a href="projects/pinlog.md"><img src="assets/featured/pinlog.webp" width="350" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
 <a href="projects/nohome.md"><img src="assets/featured/nohome.webp" width="350" alt="NoHome 실거래가 검색과 AI 도우미 화면 — 개인 기여 기록으로 이동"></a>&nbsp;
 <a href="projects/linkle.md"><img src="assets/featured/linkle.webp" width="350" alt="LINKLE 지도와 장소 정보 화면 — 개인 기여 기록으로 이동"></a>
 </p>
@@ -34,9 +32,9 @@ Web Platforms · AI Applications · Developer Tools
 
 **Problem Solving**
 
-1. **시스템 경계 문제** — SSAFESTA에서 ESC가 두 번 먹던 결함을 Unity UI 상태 snapshot과 명시 명령 채널로 해결했고, Production에서만 생긴 AI NPC 중복은 배포 산출물을 직접 확인해 원인을 확정했습니다. [기록](projects/ssafesta.md#4-engineering-decisions)
-2. **측정 기반 판단** — PinLog에서 임베딩 4조건·프롬프트 A/B·다수결을 측정해 근거가 부족한 변경은 기각하고, 짧은 질의 검색 실패는 문자열 병합 신호를 더해 해결했습니다. [기록](projects/pinlog.md#4-engineering-decisions)
-3. **구조 개선과 운영** — NoHome에서 챗봇·에이전트 두 경로를 Tool Calling 단일 엔드포인트로 합쳐 조회와 화면 조작을 나눴고, LINKLE에서는 401 자동 갱신의 루프 위험을 탭 복귀 시 갱신으로 바꿨습니다. [NoHome](projects/nohome.md#4-engineering-decisions) · [LINKLE](projects/linkle.md#4-engineering-decisions)
+1. **시스템 경계 문제** — SSAFESTA: React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결, Production에서만 생긴 AI NPC 중복은 배포 산출물로 원인 확정 [기록](projects/ssafesta.md#4-engineering-decisions)
+2. **측정 기반 판단** — PinLog: 임베딩·프롬프트·다수결 변경을 측정해 근거 없는 변경은 기각, 짧은 질의 검색 실패는 문자열 병합 신호로 해결 [기록](projects/pinlog.md#4-engineering-decisions)
+3. **구조 개선과 운영** — NoHome: 챗봇·에이전트 두 경로를 Tool Calling 단일 엔드포인트로 통합, LINKLE: 401 자동 갱신의 루프 위험을 탭 복귀 갱신으로 전환 [NoHome](projects/nohome.md#4-engineering-decisions) · [LINKLE](projects/linkle.md#4-engineering-decisions)
 
 ## Published Developer Tools
 
@@ -58,4 +56,3 @@ Web Platforms · AI Applications · Developer Tools
 - **Education** — SSAFY 15기 1학기 이수(925시간, 2026.01–06) · 신한DS 금융SW 아카데미 5기 수료(976시간, 2025.04–10)
 - **Awards** — SSAFY 1학기 프로젝트 최우수상(팀, NoHome) · 1학기 성적우수상(개인, 종합성적 반 3등) · 2026.06
 - **Certifications** — 정보처리기사 · SQLD · ADsP
-
