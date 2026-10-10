@@ -1,4 +1,4 @@
-# Lee Jeongheon
+# 이정헌 | Lee Jeongheon
 
 `@colosair` · Web Platform · AI Application · Developer Tools
 
@@ -112,7 +112,7 @@ Claude Code·Codex 같은 에이전트가 Jira를 읽고 쓰는 방식을 정책
 **Education**
 
 - SSAFY(삼성청년SW·AI아카데미) 15기 — 1학기 SW·AI 이론 및 실습 과정 이수 (2026.01 – 2026.06, 925시간)
-- 신한DS 금융SW 아카데미 5기 (2025.04 – 2025.10)
+- 신한DS 금융SW 아카데미 5기 — 976시간 수료 (2025.04 – 2025.10)
 
 **Awards**
 
