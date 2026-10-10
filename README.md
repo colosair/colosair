@@ -14,7 +14,7 @@ Web Platforms · AI Applications · Developer Tools
 <td width="50%" valign="top">
 <a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="100%" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a><br>
 <b><a href="projects/ssafesta.md">SSAFESTA</a></b> · <sub>Frontend Main · 6인</sub><br>
-React·Unity 통합, 통합 검증과 Production 승격
+React·Unity 통합, AWS EC2 Jenkins CI/CD 재설계
 </td>
 <td width="50%" valign="top">
 <a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="100%" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
@@ -47,17 +47,21 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 
 - **Web & Integration** <sub>SSAFESTA · LINKLE</sub><br>React · TypeScript · Unity WebGL 연동 · WebSocket(STOMP)
 - **Backend & AI** <sub>PinLog · NoHome · LINKLE</sub><br>Java · Spring Boot · Python · FastAPI · PostgreSQL · pgvector · Redis
-- **Delivery & Tools** <sub>SSAFESTA · NoHome · LINKLE · ASC · JAM</sub><br>Docker · Nginx · OCI ARM · MCP · npm
+- **CI/CD & Infra** <sub>SSAFESTA · NoHome · LINKLE</sub><br>AWS EC2 · Jenkins · Docker · Nginx · OCI ARM
+- **Developer Tools** <sub>ASC · JAM</sub><br>TypeScript · MCP · npm
 
 **Problem Solving**
 
-1. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
+1. **CI/CD 구조 재설계** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
+   - AWS EC2 Jenkins를 재빌드 없는 Production 승격 구조로 재설계, main 승격 11건
+   - 변경 컴포넌트만 검증하도록 바꿔 CI 설정만 고친 MR 12분 → 35초
+2. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
    - React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결
-   - Production에서만 생긴 AI NPC 중복을 배포 산출물로 원인 확정
-2. **측정 기반 판단** · [PinLog](projects/pinlog.md#4-engineering-decisions)
+   - Production 전용 AI NPC 중복을 배포 산출물의 가드 누락으로 확정, 재승격
+3. **측정 기반 판단** · [PinLog](projects/pinlog.md#4-engineering-decisions)
    - 임베딩·프롬프트·다수결 변경을 측정해 근거 없는 변경 기각
    - 짧은 질의 검색 실패를 문자열 병합 신호로 해결
-3. **구조 개선과 운영** · [NoHome](projects/nohome.md#4-engineering-decisions) · [LINKLE](projects/linkle.md#4-engineering-decisions)
+4. **구조 개선과 운영** · [NoHome](projects/nohome.md#4-engineering-decisions) · [LINKLE](projects/linkle.md#4-engineering-decisions)
    - NoHome: 챗봇·에이전트 두 경로를 Tool Calling 단일 엔드포인트로 통합
    - LINKLE: 401 자동 갱신의 루프 위험을 탭 복귀 시 갱신으로 전환
 
