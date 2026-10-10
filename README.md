@@ -107,4 +107,11 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 **Certifications & Algorithm**
 
 - 정보처리기사 · SQLD · ADsP
+- A 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="top"></a>
+- B 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="middle"></a>
+- C 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="absmiddle"></a>
+- D 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20"></a>
+- E 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="18" align="middle"></a>
+- F <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="middle"></a> 백준 [jhpaul](https://solved.ac/profile/jhpaul)
+- G 백준 <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="middle"></a>
 - 백준 [jhpaul](https://solved.ac/profile/jhpaul) <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어" height="20" align="top"></a>
