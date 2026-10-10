@@ -12,7 +12,7 @@ Web Platforms · AI Applications · Developer Tools
 
 2026.08 – 09 · Frontend Main · 6인 팀
 
-<img src="assets/featured/ssafesta.webp" width="680" alt="SSAFESTA 시연 화면: Unity WebGL 월드 위에 React 부스 선택 오버레이가 열린 모습">
+<img src="assets/featured/ssafesta.webp" width="680" alt="SSAFESTA 로그인 화면: 축제 배경 위 SSAFESTA 로고와 SSAFY·Google·Kakao 로그인, 게스트 둘러보기 버튼">
 
 Unity WebGL 월드 위에 React 오버레이를 얹은 메타버스 부스·전시 서비스입니다.
 
@@ -101,4 +101,3 @@ Jira 읽기 결과에 조회 범위를 함께 알리고, 쓰기는 Plan → Appl
 **Certifications**
 
 정보처리기사 · SQLD · ADsP
-
