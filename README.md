@@ -42,29 +42,27 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 
 ## Engineering
 
-**Strengths**
+**Stack**
 
-- **웹 클라이언트 기반 계층** <sub>React · TypeScript</sub><br>
-  React·Unity 공통 구조, Host Gateway, 실시간 통신 계층 (SSAFESTA)
-- **시스템 경계 통합·진단** <sub>계약 · 종단 검증</sub><br>
-  FE·BE·Unity·AI 계약 정리, 담당 파트 코드까지 읽어 원인 특정
-- **AI 백엔드·측정 기반 판단** <sub>Python · FastAPI · pgvector</sub><br>
-  처리 파이프라인·자연어 검색 구현, 변경 채택·기각을 측정으로 결정 (PinLog)
-- **배포·릴리스** <sub>Docker · Nginx · CI · npm</sub><br>
-  OCI ARM 배포, Production 승격 경로, npm 패키지 릴리스
+- **Web & Integration** <sub>SSAFESTA · LINKLE</sub><br>React · TypeScript · Unity WebGL 연동 · WebSocket(STOMP)
+- **Backend & AI** <sub>PinLog · NoHome · LINKLE</sub><br>Java · Spring Boot · Python · FastAPI · PostgreSQL · pgvector · Redis
+- **CI/CD & Infra** <sub>SSAFESTA · NoHome · LINKLE</sub><br>AWS EC2 · Jenkins · Docker · Nginx · OCI ARM
+- **Developer Tools** <sub>ASC · JAM</sub><br>TypeScript · MCP · npm
 
-**Key Problems Solved**
+**Problem Solving**
 
-1. **Production 승격 경로 신설** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)<br>
-   장애 뒤 Demo 검증 산출물을 재빌드 없이 승격하는 경로 구성, main 승격 11건
-2. **BE·AI 계약 불일치** · [SSAFESTA](https://github.com/mingleland/ssafesta/pull/1293)<br>
-   문서 처리 전면 실패를 재현으로 규명, BE·AI 양쪽 수정
-3. **React·Unity 입력 소유권** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)<br>
-   ESC 이중 입력을 Unity 상태 snapshot과 명시 명령 채널로 해결
-4. **짧은 질의 검색 실패** · [PinLog](projects/pinlog.md#4-engineering-decisions)<br>
-   임베딩 교체는 측정으로 기각, 4신호 검색을 검증 게이트 통과 후 운영 적용
-5. **AI 어시스턴트 오동작** · [NoHome](projects/nohome.md#4-engineering-decisions)<br>
-   Tool Calling 단일 엔드포인트로 조회 답변과 화면 조작 분리
+1. **CI/CD 구조 재설계** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
+   - AWS EC2 Jenkins 파이프라인을 Demo 검증 산출물 그대로 Production에 올리는 승격 구조로 재설계, main 승격 11건
+   - 변경 컴포넌트만 검증하도록 바꿔 CI 설정만 고친 MR 12분 → 35초
+2. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
+   - React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결
+   - 문서 처리 전면 실패를 재현해 BE·AI 계약 불일치를 규명, 양쪽 수정
+3. **측정 기반 판단** · [PinLog](projects/pinlog.md#4-engineering-decisions)
+   - 임베딩·프롬프트·다수결 변경을 측정해 근거 없는 변경 기각
+   - 짧은 질의 검색 실패를 문자열 병합 신호로 해결
+4. **구조 개선과 운영** · [NoHome](projects/nohome.md#4-engineering-decisions) · [LINKLE](projects/linkle.md#4-engineering-decisions)
+   - NoHome: 챗봇·에이전트 두 경로를 Tool Calling 단일 엔드포인트로 통합
+   - LINKLE: 401 자동 갱신의 루프 위험을 탭 복귀 시 갱신으로 전환
 
 ## Published Developer Tools
 
