@@ -42,23 +42,39 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 
 ## Engineering
 
-**Stack**
+**Strengths**
 
-- **Web & Integration** <sub>SSAFESTA · LINKLE</sub><br>React · TypeScript · Unity WebGL 연동 · WebSocket(STOMP)
-- **Backend & AI** <sub>PinLog · NoHome · LINKLE</sub><br>Java · Spring Boot · Python · FastAPI · PostgreSQL · pgvector · Redis
-- **Delivery & Tools** <sub>SSAFESTA · NoHome · LINKLE · ASC · JAM</sub><br>Docker · Nginx · OCI ARM · MCP · npm
+- **웹 클라이언트 기반 계층** <sub>React · TypeScript</sub><br>
+  Unity WebGL 위 React 공통 구조, 환경을 감추는 Host Gateway, 실시간 통신 계층, 오류 처리 3계층 설계·구현(SSAFESTA). 인증 연동(LINKLE), 개인 도구 런타임(ASC·JAM)도 TypeScript로 작성·배포
+- **시스템 경계 통합과 원인 진단** <sub>계약 · 종단 검증</sub><br>
+  FE·BE·Unity·AI 사이 계약을 맞추고, 장애가 나면 담당 파트 코드(Unity C#·Spring·FastAPI·Jenkins·nginx)까지 읽어 원인 특정(SSAFESTA). 백엔드 AI 연동 직접 구현(PinLog)
+- **AI 백엔드와 측정 기반 판단** <sub>Python · FastAPI · PostgreSQL · pgvector</sub><br>
+  AI 처리 파이프라인과 자연어 검색 구현, 측정 도구로 임베딩·임계값·프롬프트 변경의 채택과 기각 판단(PinLog)
+- **배포·릴리스 경로** <sub>Docker · Nginx · CI · npm</sub><br>
+  Docker·Nginx 배포(LINKLE), OCI ARM 배포(NoHome), Production 승격 경로와 CI 정리(SSAFESTA), npm 릴리스(ASC·JAM)
 
-**Problem Solving**
+**Key Problems Solved**
 
-1. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
-   - React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결
-   - Production에서만 생긴 AI NPC 중복을 배포 산출물로 원인 확정
-2. **측정 기반 판단** · [PinLog](projects/pinlog.md#4-engineering-decisions)
-   - 임베딩·프롬프트·다수결 변경을 측정해 근거 없는 변경 기각
-   - 짧은 질의 검색 실패를 문자열 병합 신호로 해결
-3. **구조 개선과 운영** · [NoHome](projects/nohome.md#4-engineering-decisions) · [LINKLE](projects/linkle.md#4-engineering-decisions)
-   - NoHome: 챗봇·에이전트 두 경로를 Tool Calling 단일 엔드포인트로 통합
-   - LINKLE: 401 자동 갱신의 루프 위험을 탭 복귀 시 갱신으로 전환
+1. **장애 뒤 Production 승격 경로 신설** · SSAFESTA · [기록](projects/ssafesta.md#4-engineering-decisions) · [#1217](https://github.com/mingleland/ssafesta/pull/1217) [#1230](https://github.com/mingleland/ssafesta/pull/1230)
+   - 문제: Demo 장애가 하루 5건 났고, Production 환경과 승격 절차가 없었음
+   - 해결: Demo에서 검증한 산출물을 재빌드 없이 그대로 올리는 승격 경로와 rollback 상태 전이 구성
+   - 결과: main 승격 11건 수행. Production에서만 생긴 AI NPC 중복은 배포 산출물을 직접 확인해 원인을 잡고 재승격
+2. **BE·AI 계약 불일치로 멈춘 문서 처리** · SSAFESTA · [#1293](https://github.com/mingleland/ssafesta/pull/1293) [#1294](https://github.com/mingleland/ssafesta/pull/1294)
+   - 문제: Demo·Production 문서 처리가 전부 실패, 로그에는 오류 코드만 남음
+   - 해결: AI는 계약대로 보내고 Spring은 그 필드를 거절하던 것을 직접 호출로 재현, BE는 계약대로 받게 하고 AI는 거절 사유를 기록하게 수정
+   - 결과: Demo 문서 처리 E2E 확인 후 main 승격
+3. **React·Unity 입력 소유권 재설계** · SSAFESTA · [기록](projects/ssafesta.md#4-engineering-decisions) · [#572](https://github.com/mingleland/ssafesta/pull/572) [#580](https://github.com/mingleland/ssafesta/pull/580)
+   - 문제: ESC가 두 번 먹고, 오버레이를 닫아도 Unity 카메라 초점이 남아 이동 불가
+   - 해결: Unity가 UI 상태 snapshot을 보내고 React가 명시 명령을 보내는 채널로 상태 소유 분리, Unity 입력 코드는 건드리지 않음
+   - 결과: 결함 해소, 관련 단위 테스트 22건 추가
+4. **짧은 질의 검색 실패** · PinLog · [기록](projects/pinlog.md#4-engineering-decisions) · [ai#118](https://github.com/Team-PinLog/ai/pull/118) [ai#119](https://github.com/Team-PinLog/ai/pull/119) [back#206](https://github.com/Team-PinLog/back/pull/206)
+   - 문제: 「부캠」 같은 짧은 고유명사가 검색 컷을 풀어도 8위
+   - 해결: 임베딩 모델 교체는 측정으로 기각(1위 정답 수 동일, 저장 2배), 질의 재작성·키워드 재정렬·문자열 병합·LLM 재판정 4신호를 기본 꺼짐으로 추가
+   - 결과: 신호마다 검증 게이트 통과 후 운영 활성화
+5. **AI 어시스턴트 오동작을 구조로 수정** · NoHome · [기록](projects/nohome.md#4-engineering-decisions) · [PoC](https://github.com/repechage-team/no-home-backend/commit/26054ad) [통합](https://github.com/repechage-team/no-home-backend/commit/a487fc6)
+   - 문제: 모호하거나 불만을 말한 발화도 억지로 화면 조작 명령이 됨
+   - 해결: 조회 tool은 답변, 조작 tool은 명령을 그대로 반환하는 Tool Calling 단일 엔드포인트로 재설계, 분기 동작을 PoC로 먼저 검증
+   - 결과: 챗봇·에이전트 두 엔드포인트 통합, 레거시 경로 제거
 
 ## Published Developer Tools
 
