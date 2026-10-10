@@ -8,17 +8,35 @@ Web Platforms · AI Applications · Developer Tools
 
 ## Selected Projects
 
-<p align="center">
-<a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="350" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a>
-<a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="350" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
-<a href="projects/nohome.md"><img src="assets/featured/nohome-tile.webp" width="350" alt="NoHome 실거래가 검색과 AI 도우미 화면 — 개인 기여 기록으로 이동"></a>
-<a href="projects/linkle.md"><img src="assets/featured/linkle-tile.webp" width="350" alt="LINKLE 지도와 장소 정보 화면 — 개인 기여 기록으로 이동"></a>
-</p>
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="100%" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a><br>
+<b><a href="projects/ssafesta.md">SSAFESTA</a></b> · <sub>Frontend Main · 6인</sub><br>
+React·Unity 통합, 통합 검증과 Production 승격
+</td>
+<td width="50%" valign="top">
+<a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="100%" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
+<b><a href="projects/pinlog.md">PinLog</a></b> · <sub>AI 파트 · 6인</sub><br>
+FastAPI AI 파이프라인과 자연어 검색 품질 개선
+</td>
+</tr>
+</table>
 
-1. **[SSAFESTA](projects/ssafesta.md)** — React·Unity 통합, 통합 검증과 Production 승격 · Frontend Main, 6인
-2. **[PinLog](projects/pinlog.md)** — FastAPI AI 처리 파이프라인과 자연어 검색 품질 개선 · AI 파트, 6인
-3. **[NoHome](projects/nohome.md)** — Tool Calling 기반 AI 어시스턴트와 개인 배포 · 팀장, 3인 · 최우수상(팀)
-4. **[LINKLE](projects/linkle.md)** — FE·BE 인증 구조와 Docker·Nginx 배포 · 팀장, 5인
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="projects/nohome.md"><img src="assets/featured/nohome-tile.webp" width="100%" alt="NoHome 실거래가 검색과 AI 도우미 화면 — 개인 기여 기록으로 이동"></a><br>
+<b><a href="projects/nohome.md">NoHome</a></b> · <sub>팀장 · 3인 · 최우수상(팀)</sub><br>
+Tool Calling 기반 AI 어시스턴트와 개인 배포
+</td>
+<td width="50%" valign="top">
+<a href="projects/linkle.md"><img src="assets/featured/linkle-tile.webp" width="100%" alt="LINKLE 지도와 장소 정보 화면 — 개인 기여 기록으로 이동"></a><br>
+<b><a href="projects/linkle.md">LINKLE</a></b> · <sub>팀장 · 5인</sub><br>
+FE·BE 인증 구조와 Docker·Nginx 배포
+</td>
+</tr>
+</table>
 
 원본 저장소: [SSAFESTA](https://github.com/mingleland/ssafesta) · [PinLog](https://github.com/Team-PinLog/PinLog) · [NoHome](https://github.com/repechage-team/no-home-backend) · [LINKLE](https://github.com/LINKLE-2025/LINKLE_Frontend)
 
