@@ -11,7 +11,7 @@
 | 기간 | 2026-07-21 ~ 2026-08-10 (21일) |
 | 팀 | 6인 — FE 2 · BE 2 · Infra 1 · AI 1(본인). 08-04부터 AI 파트 2인 |
 | 결과물 | Spring Boot API, React 웹, FastAPI AI 서버, k3s·Argo CD 배포 구성 (Team-PinLog 저장소 5개) |
-| 본인 역할 | AI 파트 담당. 공용 API 명세(`docs`) 관리, 백엔드의 AI 연동 경로 구현 |
+| 본인 역할 | 팀장 · AI 파트 담당. 공용 API 명세(`docs`) 관리, 백엔드의 AI 연동 경로 구현 |
 | 주요 기술 | Python 3.12, FastAPI, PostgreSQL·pgvector, asyncpg, pytest·Testcontainers, OpenAI·Gemini·Anthropic 호환 게이트웨이, Spring Boot(연동), GitHub Actions, SealedSecret |
 | 기록 규모 | 작성 PR 128건(ai 91 · back 22 · docs 14 · infra 1). `ai` 저장소 PR 112건 중 91건이 본인 PR |
 
