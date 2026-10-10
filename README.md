@@ -9,10 +9,10 @@ Web Platforms · AI Applications · Developer Tools
 ## Selected Projects
 
 <p align="center">
-<a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-login.webp" width="350" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a>
-<a href="projects/pinlog.md"><img src="assets/featured/pinlog.webp" width="350" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
-<a href="projects/nohome.md"><img src="assets/featured/nohome.webp" width="350" alt="NoHome 실거래가 검색과 AI 도우미 화면 — 개인 기여 기록으로 이동"></a>
-<a href="projects/linkle.md"><img src="assets/featured/linkle.webp" width="350" alt="LINKLE 지도와 장소 정보 화면 — 개인 기여 기록으로 이동"></a>
+<a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="350" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a>
+<a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="350" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
+<a href="projects/nohome.md"><img src="assets/featured/nohome-tile.webp" width="350" alt="NoHome 실거래가 검색과 AI 도우미 화면 — 개인 기여 기록으로 이동"></a>
+<a href="projects/linkle.md"><img src="assets/featured/linkle-tile.webp" width="350" alt="LINKLE 지도와 장소 정보 화면 — 개인 기여 기록으로 이동"></a>
 </p>
 
 1. **[SSAFESTA](projects/ssafesta.md)** — React·Unity 통합, 통합 검증과 Production 승격 · Frontend Main, 6인
@@ -26,9 +26,9 @@ Web Platforms · AI Applications · Developer Tools
 
 **Stack**
 
-- **Web & Integration** — React · TypeScript · Unity WebGL 연동 · WebSocket(STOMP) <sub>SSAFESTA · LINKLE</sub>
-- **Backend & AI** — Java · Spring Boot · Python · FastAPI · PostgreSQL · pgvector · Redis <sub>PinLog · NoHome · LINKLE</sub>
-- **Delivery & Tools** — Docker · Nginx · OCI ARM · MCP · npm <sub>SSAFESTA · NoHome · LINKLE · ASC · JAM</sub>
+- **Web & Integration** <sub>SSAFESTA · LINKLE</sub><br>React · TypeScript · Unity WebGL 연동 · WebSocket(STOMP)
+- **Backend & AI** <sub>PinLog · NoHome · LINKLE</sub><br>Java · Spring Boot · Python · FastAPI · PostgreSQL · pgvector · Redis
+- **Delivery & Tools** <sub>SSAFESTA · NoHome · LINKLE · ASC · JAM</sub><br>Docker · Nginx · OCI ARM · MCP · npm
 
 **Problem Solving**
 
