@@ -52,7 +52,7 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 **Problem Solving**
 
 1. **CI/CD 구조 재설계** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
-   - AWS EC2 Jenkins 파이프라인을 재빌드 없는 Demo → Production 승격 구조로 재설계, main 승격 11건
+   - AWS EC2 Jenkins를 재빌드 없는 Production 승격 구조로 재설계, main 승격 11건
    - 변경 컴포넌트만 검증하도록 바꿔 CI 설정만 고친 MR 12분 → 35초
 2. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
    - React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결
