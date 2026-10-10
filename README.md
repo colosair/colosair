@@ -107,3 +107,7 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 **Certifications**
 
 - 정보처리기사 · SQLD · ADsP
+
+**Algorithm**
+
+- <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어 배지" height="20" align="top"></a> 백준 [jhpaul](https://solved.ac/profile/jhpaul)
