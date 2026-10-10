@@ -1,12 +1,12 @@
 ## A. 2x2 inline gallery
 
-<p>
-<a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-login.webp" width="49%" alt="SSAFESTA"></a>
-<a href="projects/pinlog.md"><img src="assets/featured/pinlog.webp" width="49%" alt="PinLog"></a>
+<p align="center">
+<a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-login.webp" width="350" alt="SSAFESTA"></a>
+<a href="projects/pinlog.md"><img src="assets/featured/pinlog.webp" width="350" alt="PinLog"></a>
 </p>
-<p>
-<a href="projects/nohome.md"><img src="assets/featured/nohome.webp" width="49%" alt="NoHome"></a>
-<a href="projects/linkle.md"><img src="assets/featured/linkle.webp" width="49%" alt="LINKLE"></a>
+<p align="center">
+<a href="projects/nohome.md"><img src="assets/featured/nohome.webp" width="350" alt="NoHome"></a>
+<a href="projects/linkle.md"><img src="assets/featured/linkle.webp" width="350" alt="LINKLE"></a>
 </p>
 
 1. **SSAFESTA** — React·Unity 통합, 통합 검증과 Production 승격
