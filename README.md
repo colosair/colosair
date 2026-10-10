@@ -104,10 +104,7 @@ FE·BE 인증 구조와 Docker·Nginx 배포
 - SSAFY 1학기 프로젝트 최우수상 — 팀, NoHome · 2026.06
 - SSAFY 1학기 성적우수상 — 개인, 종합성적 반 3등 · 2026.06
 
-**Certifications**
+**Certifications & Algorithm**
 
 - 정보처리기사 · SQLD · ADsP
-
-**Algorithm**
-
-- <a href="https://solved.ac/profile/jhpaul"><img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=jhpaul" alt="solved.ac 티어 배지" height="20" align="top"></a> 백준 [jhpaul](https://solved.ac/profile/jhpaul)
+- 백준 플래티넘 V — solved.ac [jhpaul](https://solved.ac/profile/jhpaul)
