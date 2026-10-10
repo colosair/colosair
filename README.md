@@ -1,4 +1,4 @@
-# 이정헌 | Lee Jeongheon
+# 이정헌 (Lee Jeongheon)
 
 `@colosair` · Web Platform · AI Application · Developer Tools
 
