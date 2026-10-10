@@ -13,7 +13,7 @@ Web Platforms · AI Applications · Developer Tools
 <td width="50%" valign="top">
 <a href="projects/ssafesta.md"><img src="assets/featured/ssafesta-tile.webp" width="100%" alt="SSAFESTA 로그인 화면 — 개인 기여 기록으로 이동"></a><br>
 <b><a href="projects/ssafesta.md">SSAFESTA</a></b> · <sub>Frontend Main · 6인</sub><br>
-React·Unity 통합, 통합 검증과 Production 승격
+React·Unity 통합, AWS EC2 Jenkins CI/CD 재설계
 </td>
 <td width="50%" valign="top">
 <a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="100%" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
@@ -56,7 +56,7 @@ FE·BE 인증 구조와 Docker·Nginx 배포
    - 변경 컴포넌트만 검증하도록 바꿔 CI 설정만 고친 MR 12분 → 35초
 2. **시스템 경계 문제** · [SSAFESTA](projects/ssafesta.md#4-engineering-decisions)
    - React·Unity 사이 ESC 이중 입력을 Unity 상태 snapshot과 명시 명령으로 해결
-   - 문서 처리 전면 실패를 재현해 BE·AI 계약 불일치를 규명, 양쪽 수정
+   - Production에서만 생긴 AI NPC 중복을 배포 산출물의 가드 누락으로 확정, rollback 후 재승격
 3. **측정 기반 판단** · [PinLog](projects/pinlog.md#4-engineering-decisions)
    - 임베딩·프롬프트·다수결 변경을 측정해 근거 없는 변경 기각
    - 짧은 질의 검색 실패를 문자열 병합 신호로 해결
