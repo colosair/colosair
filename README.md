@@ -18,7 +18,7 @@ React·Unity 통합, 통합 검증과 Production 승격
 <td width="50%" valign="top">
 <a href="projects/pinlog.md"><img src="assets/featured/pinlog-tile.webp" width="100%" alt="PinLog 자연어 검색 화면 — 개인 기여 기록으로 이동"></a><br>
 <b><a href="projects/pinlog.md">PinLog</a></b> · <sub>AI 파트 · 6인</sub><br>
-FastAPI AI 처리 파이프라인과 자연어 검색 품질 개선
+FastAPI AI 파이프라인과 자연어 검색 품질 개선
 </td>
 </tr>
 </table>
