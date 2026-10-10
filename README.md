@@ -1,87 +1,104 @@
 # 이정헌 (Lee Jeongheon)
 
-**Web Platforms · AI Applications · Developer Tools**
+Web Platforms · AI Applications · Developer Tools
 
-완료한 팀 프로젝트와 실제로 배포한 개발자 도구를 정리했습니다. **담당 영역·기술적 판단·검증 결과**는 각 개인 기여 문서에서 공개 코드와 PR로 확인할 수 있습니다.
+팀 프로젝트에서 맡은 개발 영역과 직접 배포한 개발자 도구를 정리했습니다. 프로젝트마다 개인 기여 기록에서 담당 범위와 근거가 되는 코드·PR을 확인할 수 있습니다.
 
-[팀 프로젝트](#selected-team-projects) · [배포한 도구](#published-developer-tools) · [이전 작업 및 이력](#earlier-work--background)
-
----
+[Team Projects](#selected-team-projects) · [Developer Tools](#published-developer-tools) · [Earlier Work & Background](#earlier-work--background)
 
 ## Selected Team Projects
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <strong><a href="projects/ssafesta.md">SSAFESTA</a></strong><br>
-      <em>2026.08–09 · Frontend Main · 6인 팀</em>
-      <p>Unity WebGL 기반 메타버스 부스·전시 서비스.</p>
-      <p><strong>주요 기여</strong><br>React·Unity Host/Bridge 설계, 이벤트 계약·통합 검증, Demo 검증 산출물의 Production 승격.</p>
-      <a href="projects/ssafesta.md">개인 기여</a> · <a href="https://github.com/mingleland/ssafesta">원본 코드</a>
-    </td>
-    <td width="50%" valign="top">
-      <strong><a href="projects/pinlog.md">PinLog</a></strong><br>
-      <em>2026.07–08 · AI 담당 · 6인 팀</em>
-      <p>경험·방문 이유를 기록하고 자연어로 검색하는 장소 아카이빙 서비스.</p>
-      <p><strong>주요 기여</strong><br>FastAPI 비동기 처리·상태 전이, 4신호 검색 고도화, 품질 측정과 백엔드 AI 연동.</p>
-      <a href="projects/pinlog.md">개인 기여</a> · <a href="https://github.com/Team-PinLog/PinLog">원본 코드</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <strong><a href="projects/nohome.md">NoHome</a></strong><br>
-      <em>2026.06–07 · 팀장 / AI · 팀 3인 + 개인 고도화</em>
-      <p>서울 아파트 실거래가 조회와 AI 어시스턴트. <strong>SSAFY 1학기 프로젝트 최우수상(팀)</strong>.</p>
-      <p><strong>주요 기여</strong><br>Tool Calling 기반 조회·화면 조작 분리, 테스트 동기화. 팀 종료 후 OCI ARM·Docker·HTTPS 배포.</p>
-      <a href="projects/nohome.md">개인 기여</a> · <a href="https://github.com/repechage-team/no-home-backend">팀 코드</a>
-    </td>
-    <td width="50%" valign="top">
-      <strong><a href="projects/linkle.md">LINKLE</a></strong><br>
-      <em>2025.08–09 · 팀장 / 인증·배포 · 5인으로 시작</em>
-      <p>지도 기반 장소 기록·지역 SNS 서비스.</p>
-      <p><strong>주요 기여</strong><br>Spring Boot·React 양단 인증(JWT·Redis·HttpOnly 쿠키), Focus-Refresh, HTTPS·Docker·Nginx 배포.</p>
-      <a href="projects/linkle.md">개인 기여</a> · <a href="https://github.com/LINKLE-2025/LINKLE_Frontend">FE 코드</a> · <a href="https://github.com/LINKLE-2025/LINKLE_Backend">BE 코드</a>
-    </td>
-  </tr>
-</table>
+### SSAFESTA
+
+2026.08 – 09 · Frontend Main · 6인 팀
+
+<img src="assets/featured/ssafesta.webp" width="680" alt="SSAFESTA 시연 화면: Unity WebGL 월드 위에 React 부스 선택 오버레이가 열린 모습">
+
+Unity WebGL 월드 위에 React 오버레이를 얹은 메타버스 부스·전시 서비스입니다.
+
+- React 프론트엔드 공통 구조와 Unity Host·Bridge 계층 설계·구현
+- FE·BE·Unity 통합 검증, Demo에서 검증한 산출물의 Production 승격
+
+[개인 기여 기록](projects/ssafesta.md) · [원본 저장소](https://github.com/mingleland/ssafesta)
+
+### PinLog
+
+2026.07 – 08 · AI 파트 담당 · 6인 팀
+
+<img src="assets/featured/pinlog.webp" width="680" alt="PinLog 자연어 검색 화면: 검색어로 찾은 장소 기록 카드와 지도 위 위치">
+
+장소를 방문 이유와 경험과 함께 기록하고, 자연어로 다시 찾는 장소 아카이빙 서비스입니다.
+
+- FastAPI AI 서버의 비동기 처리 파이프라인과 상태 전이
+- 자연어 검색 4신호 고도화, 측정으로 정한 채택·기각
+
+[개인 기여 기록](projects/pinlog.md) · [원본 저장소](https://github.com/Team-PinLog/PinLog)
+
+### NoHome
+
+2026.06 · 팀장·AI 어시스턴트 · 3인 팀 · 1학기 프로젝트 최우수상(팀)
+
+<img src="assets/featured/nohome.webp" width="680" alt="NoHome 실거래가 검색 화면: 지도 위 검색 결과와 AI 도우미 대화창">
+
+서울 아파트 실거래가 조회에 AI 어시스턴트를 더한 웹 서비스입니다.
+
+- Tool Calling으로 조회 답변과 화면 조작을 나눈 AI 어시스턴트 설계·구현
+- 팀 종료 후 개인 고도화로 OCI ARM 서버에 Docker Compose·HTTPS 배포
+
+[개인 기여 기록](projects/nohome.md) · [팀 원본](https://github.com/repechage-team/no-home-backend) · [개인 고도화](https://github.com/no-home-project/no-home-docs)
+
+### LINKLE
+
+2025.08 – 09 · 팀장·인증·배포 · 5인 팀
+
+<img src="assets/featured/linkle.webp" width="680" alt="LINKLE 배포 화면: 지도 위 장소 마커와 선택한 장소의 링커 정보">
+
+지도 위 장소에 사진과 메모를 남기고, 같은 장소에 관심 있는 사람과 연결되는 지역 SNS입니다.
+
+- Spring Boot·React 양단 인증: JWT·Redis·HttpOnly 쿠키, 탭 복귀 시 토큰 갱신
+- 로컬 HTTPS·CORS 구성과 Docker·Nginx 배포
+
+[개인 기여 기록](projects/linkle.md) · [Frontend](https://github.com/LINKLE-2025/LINKLE_Frontend) · [Backend](https://github.com/LINKLE-2025/LINKLE_Backend)
 
 ## Published Developer Tools
 
-직접 설계·구현하고 npm에 배포한 개인 개발 도구입니다.
+직접 설계·구현하고 npm에 배포한 도구입니다.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/colosair/asc">ASC</a> — Agent Session Control</strong><br>
-      <em>확인된 릴리스 · v0.10.2</em>
-      <p>AI 코딩 에이전트의 작업 목표·쓰기 경계·승인 조건을 세션 계약으로 관리하는 로컬 제어 계층.</p>
-      <a href="https://github.com/colosair/asc">소스·문서</a> · <a href="https://www.npmjs.com/package/@asc-agent/runtime">npm</a>
-    </td>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/colosair/jam">JAM</a> — Jira Agent MCP</strong><br>
-      <em>확인된 릴리스 · v1.8.0</em>
-      <p>Jira 읽기의 근거 범위를 표시하고 Plan → Apply → Verify 절차로 쓰기 작업을 제어하는 MCP 서버.</p>
-      <a href="https://github.com/colosair/jam">소스·문서</a> · <a href="https://www.npmjs.com/package/@jam-mcp/server">npm</a>
-    </td>
-  </tr>
-</table>
+### ASC — Agent Session Control
+
+AI 코딩 에이전트 세션마다 목표·쓰기 경계·승인 조건을 계약으로 두고, 실제 경계에서만 사람의 승인을 거치게 하는 로컬 제어 계층입니다.
+
+`v0.10.2` · [소스·README](https://github.com/colosair/asc) · [npm](https://www.npmjs.com/package/@asc-agent/runtime)
+
+### JAM — Jira Agent MCP
+
+Jira 읽기 결과에 조회 범위를 함께 알리고, 쓰기는 Plan → Apply → Verify 절차로만 실행하는 MCP 서버입니다.
+
+`v1.8.0` · [소스·README](https://github.com/colosair/jam) · [npm](https://www.npmjs.com/package/@jam-mcp/server)
 
 ## Earlier Work & Background
 
 <details>
-<summary><strong>이전 작업 보기 — CardGarden · teacafe_POS · 학습 도구</strong></summary>
+<summary>이전 작업 — CardGarden · teacafe_POS · DB/Spring Quiz · SQLP Tuning Mock</summary>
 
-| 작업 | 확인된 결과 |
-|---|---|
-| [CardGarden](https://github.com/colosair/cardgarden) · 2025 | Spring·MyBatis 기반 카드 추천 서비스. 팀장, 이메일 인증·3사 OAuth2, 초기 구조·배포 |
-| [teacafe_POS](https://github.com/colosair/teacafe_POS) · 2025 | Java·JDBC 기반 찻집 콘솔 POS 개인 학습 프로젝트 |
-| [DB Quiz](https://github.com/colosair/db-quiz) / [Spring Quiz](https://github.com/colosair/spring-quiz) · 2026 | 과목 평가 대비 모의고사 웹앱(각 150문항) |
-| [SQLP Tuning Mock](https://github.com/colosair/sqlp-tuning-mock) · 2026 | SQL 튜닝 창작 모의문제 240문항(CC BY 4.0) |
+- [CardGarden](https://github.com/colosair/cardgarden) · 2025 — Spring·MyBatis 기반 카드 추천 웹 서비스. 팀장, 이메일 인증·3사 OAuth2, 초기 구조·배포
+- [teacafe_POS](https://github.com/colosair/teacafe_POS) · 2025 — Java·JDBC로 만든 찻집 콘솔 POS, 개인 학습 프로젝트
+- [DB Quiz](https://github.com/colosair/db-quiz) · [Spring Quiz](https://github.com/colosair/spring-quiz) · 2026 — 과목평가 대비 모의고사 웹앱, 각 150문항
+- [SQLP Tuning Mock](https://github.com/colosair/sqlp-tuning-mock) · 2026 — SQL 튜닝 창작 모의문제 240문항, CC BY 4.0
 
 </details>
 
-| Education | Awards · Certifications |
-|---|---|
-| **SSAFY 15기** — 1학기 과정 이수(2026.01–06, 925시간)<br><br>**신한DS 금융SW 아카데미 5기** — 976시간 수료(2025.04–10) | **SSAFY** — 1학기 프로젝트 최우수상(팀, NoHome), 1학기 성적우수상(개인·반 3등, 2026.06)<br><br>**정보처리기사** · **SQLD** · **ADsP** |
+**Education**
 
-> 프로젝트에서 실제 수행한 내용과 팀 전체 결과는 구분하여 기록했습니다. 세부 구현·트러블슈팅·한계는 [프로젝트별 개인 기여 문서](projects/)에 남겼습니다.
+- SSAFY 15기 — 1학기 과정 이수 · 925시간 (2026.01 – 06)
+- 신한DS 금융SW 아카데미 5기 — 수료 · 976시간 (2025.04 – 10)
+
+**Awards**
+
+- SSAFY 1학기 프로젝트 최우수상 — 팀, NoHome (2026.06)
+- SSAFY 1학기 성적우수상 — 개인, 종합성적 반 3등 (2026.06)
+
+**Certifications**
+
+정보처리기사 · SQLD · ADsP
+
