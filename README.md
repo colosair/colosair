@@ -1,4 +1,4 @@
-# 이정헌 (Lee Jeongheon)
+# 이정헌 (Jeongheon Lee)
 
 Web Platforms · AI Applications · Developer Tools
 
